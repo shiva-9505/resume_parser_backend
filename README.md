@@ -18,33 +18,6 @@ Nodemailer for OTPs
 
 
 
-
-Project Structure
-
-resume_parser_backend/
-│
-├── controllers/
-│   ├── authController.js
-│   ├── resumeController.js
-│
-├── models/
-│   ├── User.js
-│   ├── Resume.js
-│
-├── routes/
-│   ├── adminRoutes.js
-│   ├── userRoutes.js
-│
-├── middlewares/
-│   ├── verifyToken.js
-│   ├── roleCheck.js
-│
-├── uploads/               //Resume files stored here
-├── index.js               //Entry point
-
-
-
-
 Authentication Flow
 
 Admin Login

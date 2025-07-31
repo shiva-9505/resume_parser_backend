@@ -28,6 +28,7 @@ const uploadResume = async (req, res) => {
 
 const viewAllResumes = async (req, res) => {
   try {
+    
     const resumes = await Resume.find().populate('user', 'name email').sort({ createdAt: -1 });
     res.status(200).json(resumes);
   } catch (error) {

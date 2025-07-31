@@ -4,9 +4,9 @@ const pdfParse = require('pdf-parse');
 const extractInfo = (text) => {
   const emailRegex = /[\w.-]+@[\w.-]+\.\w+/;
   const phoneRegex = /(?:\+91[-\s]?)?[6-9]\d{9}/;
-  const skillKeywords = ['JavaScript', 'React', 'Node.js', 'MongoDB', 'Python', 'C++', 'HTML', 'CSS'];
-  const educationKeywords = ['B.Tech', 'M.Tech', 'Bachelor', 'Master', 'Degree', 'Graduation', 'Computer Science'];
-  const experienceRegex = /(experience|worked|company|years)[^\n]{0,100}/i;
+  const skillKeywords = ['Java','JavaScript', 'React', 'Node.js', 'MongoDB', 'Python', 'C++', 'HTML', 'CSS'];
+  const educationKeywords = ['B.Tech', 'M.Tech', 'Bachelor', 'Master', 'Degree', 'Graduation', 'Intermediate','SSC','Inter','10th class'];
+  const experienceRegex = /(experience|worked|company|years)[^\n]{0,150}/i;
 
   const email = text.match(emailRegex)?.[0] || '';
   const phone = text.match(phoneRegex)?.[0] || '';
